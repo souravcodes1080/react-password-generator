@@ -1,7 +1,8 @@
-.wrapper{
+.wrapper {
     width: 100vw;
 }
-.container{
+
+.container {
     margin: auto;
     width: 70%;
     display: flex;
@@ -9,11 +10,13 @@
     justify-content: center;
     align-items: center;
 }
-.lock{
+
+.lock {
     margin: 20px 0;
     width: 30%;
 }
-h1{
+
+h1 {
     font-size: 60px;
     font-weight: 900;
     color: transparent;
@@ -22,12 +25,14 @@ h1{
     letter-spacing: 3px;
     margin: 20px 0;
 }
-.password-text{
+
+.password-text {
     width: 100%;
     display: flex;
     align-items: center;
 }
-.password-text input{
+
+.password-text input {
     margin: 20px;
     height: 40px;
     padding: 5px 30px;
@@ -39,7 +44,8 @@ h1{
     letter-spacing: 3px;
     text-align: center;
 }
-.password-text button{
+
+.password-text button {
     cursor: pointer;
     height: 50px;
     width: 20%;
@@ -51,15 +57,14 @@ h1{
     background-color: rgba(193, 193, 252, 0.514);
 }
 
-.slider{
+.slider {
     width: 500px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     font-size: 18px;
 }
 
-.slider input{
+.slider input {
     margin: 20px;
     width: 90%;
     height: 20px;
@@ -67,14 +72,14 @@ h1{
 }
 
 .slider input[type=range]::-webkit-slider-runnable-track {
-    
+
     height: 20px;
     cursor: pointer;
     background: #474747;
     border-radius: 20px;
 
-  }
-  
+}
+
 .slider input[type=range]::-webkit-slider-thumb {
     border: 1px solid #333;
     height: 40px;
@@ -82,28 +87,71 @@ h1{
     background: #fff;
     -webkit-appearance: none;
     margin-top: 2px;
-  }
+}
 
-  .checkboxes{
+.checkboxes {
     display: flex;
     justify-content: flex-start;
     margin: 20px;
-  }
-  .checkboxes input{
+}
+
+.checkboxes input {
     width: 30px;
-  }
-  .checkboxes label{
+}
+
+.checkboxes label {
     margin-left: 10px;
-  }
-  .generate{
-        width: max-content;
-        margin: 20px;
-        cursor: pointer;
-        height: 50px;
-        outline: none;
-        border: none;
-        border-radius: 50px;
-        font-size: 18px;
-        padding: 5px 30px;
-        background-color: rgba(193, 193, 252, 0.514);
-  }
+}
+
+.generate {
+    width: max-content;
+    margin: 20px;
+    cursor: pointer;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    padding: 5px 30px;
+    background-color: rgba(193, 193, 252, 0.514);
+}
+
+
+@media screen and (max-width: 1035px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .lock {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 662px) {
+    .container {
+        width: 100%
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .lock {
+        width: 50%;
+    }
+
+    .slider {
+        width: 100vw;
+    }
+
+    .slider input {
+        width: 70%;
+    }
+
+    .password-text button {
+        width: 30%;
+        padding: 5px 10px;
+
+    }
+
+}
