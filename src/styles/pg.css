@@ -1,0 +1,109 @@
+.wrapper{
+    width: 100vw;
+}
+.container{
+    margin: auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.lock{
+    margin: 20px 0;
+    width: 30%;
+}
+h1{
+    font-size: 60px;
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    letter-spacing: 3px;
+    margin: 20px 0;
+}
+.password-text{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.password-text input{
+    margin: 20px;
+    height: 40px;
+    padding: 5px 30px;
+    width: 80%;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+.password-text button{
+    cursor: pointer;
+    height: 50px;
+    width: 20%;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    padding: 5px 30px;
+    background-color: rgba(193, 193, 252, 0.514);
+}
+
+.slider{
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.slider input{
+    margin: 20px;
+    width: 90%;
+    height: 20px;
+    transition: .3s ease all;
+}
+
+.slider input[type=range]::-webkit-slider-runnable-track {
+    
+    height: 20px;
+    cursor: pointer;
+    background: #474747;
+    border-radius: 20px;
+
+  }
+  
+.slider input[type=range]::-webkit-slider-thumb {
+    border: 1px solid #333;
+    height: 40px;
+    width: 40px;
+    background: #fff;
+    -webkit-appearance: none;
+    margin-top: 2px;
+  }
+
+  .checkboxes{
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px;
+  }
+  .checkboxes input{
+    width: 30px;
+  }
+  .checkboxes label{
+    margin-left: 10px;
+  }
+  .generate{
+        width: max-content;
+        margin: 20px;
+        cursor: pointer;
+        height: 50px;
+        outline: none;
+        border: none;
+        border-radius: 50px;
+        font-size: 18px;
+        padding: 5px 30px;
+        background-color: rgba(193, 193, 252, 0.514);
+  }

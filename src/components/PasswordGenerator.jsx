@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useState } from "react";
-import "../styles/pg.css";
 import {character, number, str} from "../Constants"
+import "../styles/pg.css";
+import pg from "../assets/pg.png"
 
 
 function PasswordGenerator() {
@@ -42,13 +43,15 @@ function PasswordGenerator() {
   return (
     <>
       <div className="container">
+      <img src={pg} alt="lock_img" className="lock"/>
         <h1>Password Generator</h1>
         <div className="password-text">
           <input type="text" value={password} readOnly/>
           <button onClick={copyPassword}>Copy</button>
         </div>
         <div className="adjustment">
-          5
+        <div className="slider">
+            
           <input
             type="range"
             min={5}
@@ -58,7 +61,9 @@ function PasswordGenerator() {
               setLength(e.target.value);
             }}
           />
-          20
+          <p>{length}</p>
+        </div>
+          
           <div className="checkboxes">
             <input
               type="checkbox"
@@ -77,7 +82,7 @@ function PasswordGenerator() {
             />
             <label>Characters</label>
           </div>
-          <button onClick={passwordGenerator}>Generate</button>
+          <button onClick={passwordGenerator} className="generate">Generate</button>
         </div>
       </div>
     </>
