@@ -11,7 +11,7 @@ function PasswordGenerator() {
   const [isNumber, setIsNumber] = useState(false);
   const [isCharacter, setIsCharacter] = useState(false);
 
-  
+
   //methods
   const passwordGenerator = useCallback(() => {
     let pass = "";
@@ -44,7 +44,7 @@ function PasswordGenerator() {
       <div className="container">
         <h1>Password Generator</h1>
         <div className="password-text">
-          <input type="text" value={password} />
+          <input type="text" value={password} readOnly/>
           <button onClick={copyPassword}>Copy</button>
         </div>
         <div className="adjustment">
